@@ -25,5 +25,8 @@
     [
       "tamed_animal"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/tame_an_animal/main"
+  }
 }

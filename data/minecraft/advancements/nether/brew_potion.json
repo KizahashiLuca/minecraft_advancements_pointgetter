@@ -25,5 +25,8 @@
     [
       "potion"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/brew_potion/main"
+  }
 }

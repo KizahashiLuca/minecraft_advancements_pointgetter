@@ -531,5 +531,8 @@
       "minecraft:zombie",
       "minecraft:zombified_piglin"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/kill_a_mob/main"
+  }
 }

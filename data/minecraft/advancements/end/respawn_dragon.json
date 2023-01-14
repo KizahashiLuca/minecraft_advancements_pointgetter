@@ -35,5 +35,8 @@
     [
       "summoned_dragon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/end/respawn_dragon/main"
+  }
 }

@@ -43,5 +43,8 @@
     [
       "used_warped_fungus_on_a_stick"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/ride_strider/main"
+  }
 }

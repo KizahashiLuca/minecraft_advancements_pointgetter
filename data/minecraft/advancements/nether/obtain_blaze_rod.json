@@ -33,5 +33,8 @@
     [
       "blaze_rod"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/obtain_blaze_rod/main"
+  }
 }

@@ -33,5 +33,8 @@
     [
       "crafting_table"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/root/main"
+  }
 }

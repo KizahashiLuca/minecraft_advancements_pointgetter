@@ -28,6 +28,12 @@ team_text=(
 declare -a objectives=()
 ## stem list
 declare -a stems=()
+## title list
+declare -a titles=()
+## description list
+declare -a descriptions=()
+## frame list
+declare -a frames=()
 ## json list
 declare -a jsons=()
 
@@ -139,16 +145,23 @@ function map:system/common/randomizer/randomize
 
 ## Set points
 scoreboard players operation #map ${ADV_OBJECTIVE} = #map RandomAnswer
+
+## Set scoreboards
+scoreboard players set #map ChooseAdvancements 1
 EOF
     ## add objectives
     objectives=("${objectives[@]}" ${ADV_OBJECTIVE})
     stems=("${stems[@]}" "${DIR}/${STEM}")
+    titles=("${titles[@]}" ${TITLE})
+    descriptions=("${descriptions[@]}" ${DESCRIPTION})
+    frames=("${frames[@]}" ${FRAME})
     ## remove tmp json
     jsons+=(${TMP})
     ## increment
     i=$((i+1))
   done
 done
+COUNT=$((i))
 
 ## remove jsons
 for AD in "${AD_NAME[@]}"; do
@@ -164,7 +177,13 @@ done
 ## Make adding objectives list
 ADD_SCORE=${BASE_DIR}/data/map/functions/system/begin/set_game/add_advancements_scoreboards.mcfunction
 filecomment "${ADD_SCORE}"
-echo "## Add scoreboards" >> ${ADD_SCORE}
+cat << EOF >> ${ADD_SCORE}
+## Add scoreboards
+#### advancements count
+scoreboard objectives add AdvancementsCount dummy
+scoreboard objectives add ChooseAdvancements dummy
+#### each advancements
+EOF
 i=0
 for objective in ${objectives[@]}; do
   ## add objective
@@ -176,7 +195,13 @@ done
 ## Make setting objectives list
 SET_SCORE=${BASE_DIR}/data/map/functions/system/begin/set_game/set_advancements_scoreboards.mcfunction
 filecomment "${SET_SCORE}"
-echo "## Set scoreboards" >> ${SET_SCORE}
+cat << EOF >> ${SET_SCORE}
+## Set scoreboards
+#### advancements count
+scoreboard players set #map AdvancementsCount ${COUNT}
+scoreboard players set #map ChooseAdvancements 0
+#### each advancements
+EOF
 i=0
 for objective in ${objectives[@]}; do
   ## add objective
@@ -211,8 +236,28 @@ filecomment "${SET_ADVS}"
 echo "## Choose advancements randomly" >> ${SET_ADVS}
 i=0
 for objective in ${objectives[@]}; do
-  echo "execute if score #map RandomAnswer matches ${i} if score #map ${objective} matches 0 run function map:${WAIT_DIR}/${stems[$i]}" >> ${SET_ADVS}
+  echo "execute if score #map RandomAnswer matches ${i} if score #map ${objective} matches 0 run function map:system/wait/set_advancements/${stems[$i]}" >> ${SET_ADVS}
   ## increment
   i=$((i+1))
 done
 
+## Send messages
+SEND_MES=${BASE_DIR}/data/map/functions/system/wait/set_advancements/send_messages.mcfunction
+filecomment "${SEND_MES}"
+cat << EOF >> ${SEND_MES}
+## Send messages
+tellraw @a ["",{"text":"達成目標の進捗は以下"}]
+EOF
+i=0
+for objective in ${objectives[@]}; do
+  if [ ${frames[$i]} == "challenge" ]; then
+    COLOR=dark_purple
+  else
+    COLOR=green
+  fi
+  cat << EOF >> ${SEND_MES}
+execute unless score #map ${objective} matches 0 run tellraw @a ["",{"translate":" - %s : %s","with":[{"translate":"%s点","color":"white","with":[{"score":{"name":"#map","objective":"${objective}"}}]},{"translate":"[%s]","color":"${COLOR}","with":[{"translate":"${titles[$i]}","hoverEvent":{"action":"show_text","value":[{"translate":"%s\n%s","color":"${COLOR}","with":[{"translate":"${titles[$i]}"},{"translate":"${descriptions[$i]}"}]}]}}]}]}]
+EOF
+  ## increment
+  i=$((i+1))
+done

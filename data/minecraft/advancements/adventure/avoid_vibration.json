@@ -25,5 +25,8 @@
     [
       "avoid_vibration"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/avoid_vibration/main"
+  }
 }

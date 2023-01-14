@@ -32,5 +32,8 @@
     [
       "get_stone"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/mine_stone/main"
+  }
 }

@@ -49,6 +49,7 @@
     ]
   ],
   "rewards": {
-    "experience": 65
+    "experience": 65,
+    "function": "map:system/game/advancements/adventure/two_birds_one_arrow/main"
   }
 }

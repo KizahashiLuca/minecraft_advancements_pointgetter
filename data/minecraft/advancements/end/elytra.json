@@ -34,5 +34,8 @@
     [
       "elytra"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/end/elytra/main"
+  }
 }

@@ -38,5 +38,8 @@
     [
       "struck_villager"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/very_very_frightening/main"
+  }
 }

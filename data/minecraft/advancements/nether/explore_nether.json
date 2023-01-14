@@ -116,6 +116,7 @@
     ]
   ],
   "rewards": {
-    "experience": 500
+    "experience": 500,
+    "function": "map:system/game/advancements/nether/explore_nether/main"
   }
 }

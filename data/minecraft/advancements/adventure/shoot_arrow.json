@@ -35,5 +35,8 @@
     [
       "shot_arrow"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/shoot_arrow/main"
+  }
 }

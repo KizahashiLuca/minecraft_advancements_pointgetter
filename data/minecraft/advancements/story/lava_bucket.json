@@ -33,5 +33,8 @@
     [
       "lava_bucket"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/lava_bucket/main"
+  }
 }

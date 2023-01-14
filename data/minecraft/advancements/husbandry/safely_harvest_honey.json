@@ -37,5 +37,8 @@
     [
       "safely_harvest_honey"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/safely_harvest_honey/main"
+  }
 }

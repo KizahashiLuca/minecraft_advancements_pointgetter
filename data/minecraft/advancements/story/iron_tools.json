@@ -34,5 +34,8 @@
     [
       "iron_pickaxe"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/iron_tools/main"
+  }
 }

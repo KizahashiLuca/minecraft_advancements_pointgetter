@@ -43,5 +43,8 @@
     [
       "froglights"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/froglights/main"
+  }
 }

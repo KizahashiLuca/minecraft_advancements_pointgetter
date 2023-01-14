@@ -59,5 +59,8 @@
     [
       "wax_off"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/wax_off/main"
+  }
 }

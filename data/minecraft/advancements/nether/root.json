@@ -27,5 +27,8 @@
     [
       "entered_nether"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/root/main"
+  }
 }

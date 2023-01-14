@@ -34,5 +34,8 @@
     [
       "stone_pickaxe"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/upgrade_tools/main"
+  }
 }

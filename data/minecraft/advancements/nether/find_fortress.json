@@ -37,5 +37,8 @@
     [
       "fortress"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/find_fortress/main"
+  }
 }

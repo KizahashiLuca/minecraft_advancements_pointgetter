@@ -29,5 +29,8 @@
     [
       "beacon"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/create_beacon/main"
+  }
 }

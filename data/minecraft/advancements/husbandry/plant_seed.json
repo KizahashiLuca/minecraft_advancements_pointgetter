@@ -55,5 +55,8 @@
       "beetroots",
       "nether_wart"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/plant_seed/main"
+  }
 }

@@ -19,9 +19,5 @@ execute as @a[predicate=map:system/fall/detect_on_ground/not_on_ground] at @s ru
 ## Detect on ground
 execute as @a[predicate=map:system/fall/detect_on_ground/on_ground] at @s run function map:system/fall/teleport
 
-## Respawn beacon system
-execute as @e[predicate=map:area_effect_cloud/respawn_beacon/structure] at @s run function map:system/common/respawn_beacon/main
-execute as @e[predicate=map:marker/respawn_beacon/position] at @s run function map:system/common/respawn_beacon/construct
-
 ## Change phase
 execute unless entity @p[predicate=map:system/fall/detect_on_ground/not_on_ground] run function map:system/fall/send_message

@@ -8,6 +8,10 @@
 ########################################
 
 ## Add scoreboards
+#### advancements count
+scoreboard objectives add AdvancementsCount dummy
+scoreboard objectives add ChooseAdvancements dummy
+#### each advancements
 scoreboard objectives add AD_Adventure_adventuring_time dummy
 scoreboard objectives add AD_Adventure_arbalistic dummy
 scoreboard objectives add AD_Adventure_avoid_vibration dummy

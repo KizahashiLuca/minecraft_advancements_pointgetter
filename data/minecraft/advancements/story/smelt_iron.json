@@ -33,5 +33,8 @@
     [
       "iron"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/smelt_iron/main"
+  }
 }

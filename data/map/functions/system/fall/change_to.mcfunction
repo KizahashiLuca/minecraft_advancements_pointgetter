@@ -25,6 +25,8 @@ tellraw @a ["",{"text":"  物資投下間隔 : ","color":"white","bold":false,"i
 tellraw @a[predicate=map:gamerules/world_border/unlimited] ["",{"text":"  ワールド範囲 : ","color":"white","bold":false,"italic":false},{"text":"制限なし","color":"green","bold":false,"italic":false}]
 tellraw @a[predicate=map:gamerules/world_border/limited] ["",{"text":"  ワールド範囲 : ","color":"white","bold":false,"italic":false},{"translate":"%s x %s","with":[{"score":{"name":"#map","objective":"WorldBorder"}},{"score":{"name":"#map","objective":"WorldBorder"}}],"color":"green","bold":false,"italic":false}]
 tellraw @a ["",{"text":"  デスからリスポーンまでの時間 : ","color":"white","bold":false,"italic":false},{"translate":"%s 分","with":[{"score":{"name":"#map","objective":"DeathPenaltyTime"}}],"color":"green","bold":false,"italic":false}]
+tellraw @a ["",{"text":"------------------------------------","color":"white","bold":false,"italic":false}]
+function map:system/wait/set_advancements/send_messages
 function map:system/common/message/end
 
 ## Teleport

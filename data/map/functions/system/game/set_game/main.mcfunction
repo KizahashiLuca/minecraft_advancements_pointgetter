@@ -20,7 +20,6 @@ function map:system/game/set_game/set_players
 
 ## Set scoreboards
 function map:system/game/set_game/set_scoreboards
-function map:system/begin/set_game/set_advancements_scoreboards
 
 ## Change bossbar
 function map:system/game/set_game/set_bossbar

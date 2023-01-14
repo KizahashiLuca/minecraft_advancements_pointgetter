@@ -41,5 +41,8 @@
     [
       "charge_respawn_anchor"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/charge_respawn_anchor/main"
+  }
 }

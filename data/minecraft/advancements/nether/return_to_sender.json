@@ -43,6 +43,7 @@
     ]
   ],
   "rewards": {
-    "experience": 50
+    "experience": 50,
+    "function": "map:system/game/advancements/nether/return_to_sender/main"
   }
 }

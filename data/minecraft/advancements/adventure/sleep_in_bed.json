@@ -25,5 +25,8 @@
     [
       "slept_in_bed"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/sleep_in_bed/main"
+  }
 }

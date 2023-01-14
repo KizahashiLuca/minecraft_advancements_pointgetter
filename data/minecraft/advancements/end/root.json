@@ -27,5 +27,8 @@
     [
       "entered_end"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/end/root/main"
+  }
 }

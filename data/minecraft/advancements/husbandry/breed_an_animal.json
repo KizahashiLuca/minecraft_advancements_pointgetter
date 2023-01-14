@@ -25,5 +25,8 @@
     [
       "bred"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/breed_an_animal/main"
+  }
 }

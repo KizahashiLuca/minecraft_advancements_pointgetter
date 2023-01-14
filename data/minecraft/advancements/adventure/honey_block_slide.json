@@ -27,5 +27,8 @@
     [
       "honey_block_slide"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/honey_block_slide/main"
+  }
 }

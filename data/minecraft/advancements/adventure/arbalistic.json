@@ -30,6 +30,7 @@
     ]
   ],
   "rewards": {
-    "experience": 85
+    "experience": 85,
+    "function": "map:system/game/advancements/adventure/arbalistic/main"
   }
 }

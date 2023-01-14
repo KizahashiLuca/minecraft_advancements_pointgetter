@@ -44,5 +44,8 @@
     [
       "voluntary_exile"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/voluntary_exile/main"
+  }
 }

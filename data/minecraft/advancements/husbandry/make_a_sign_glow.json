@@ -36,5 +36,8 @@
     [
       "make_a_sign_glow"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/make_a_sign_glow/main"
+  }
 }

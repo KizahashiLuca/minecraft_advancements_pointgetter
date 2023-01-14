@@ -38,5 +38,8 @@
     [
       "use_lodestone"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/use_lodestone/main"
+  }
 }

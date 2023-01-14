@@ -35,5 +35,8 @@
     [
       "summoned"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/nether/summon_wither/main"
+  }
 }

@@ -33,5 +33,8 @@
     [
       "diamond"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/story/mine_diamond/main"
+  }
 }

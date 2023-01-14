@@ -64,5 +64,8 @@
       "pufferfish_bucket",
       "salmon_bucket"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/husbandry/tactical_fishing/main"
+  }
 }

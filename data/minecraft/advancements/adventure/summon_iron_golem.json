@@ -35,5 +35,8 @@
     [
       "summoned_golem"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/summon_iron_golem/main"
+  }
 }

@@ -25,5 +25,8 @@
     [
       "traded"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/trade/main"
+  }
 }

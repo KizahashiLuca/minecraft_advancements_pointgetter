@@ -14,7 +14,7 @@ scoreboard players remove #map RandomCount 1
 scoreboard players operation #map RandomSeed *= #map RandomMultiplier
 scoreboard players operation #map RandomSeed %= #map RandomModder
 scoreboard players operation #map RandomAnswer = #map RandomSeed
-scoreboard players operation #map RandomAnswer %= #map 100
+scoreboard players operation #map RandomAnswer %= #map 10
 
 ## Loop
 execute if predicate map:system/common/randomizer/gt_zero run function map:system/common/randomizer/randomize

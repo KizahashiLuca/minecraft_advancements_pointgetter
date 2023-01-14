@@ -25,5 +25,8 @@
     [
       "kill_mob_near_sculk_catalyst"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/kill_mob_near_sculk_catalyst/main"
+  }
 }

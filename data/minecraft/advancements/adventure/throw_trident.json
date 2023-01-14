@@ -35,5 +35,8 @@
     [
       "shot_trident"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "map:system/game/advancements/adventure/throw_trident/main"
+  }
 }

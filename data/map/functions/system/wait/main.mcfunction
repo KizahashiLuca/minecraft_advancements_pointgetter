@@ -22,6 +22,9 @@ execute if predicate map:system/wait/set_teams run function map:system/wait/set_
 ## Set world border
 execute if predicate map:system/wait/set_world_border at @e[predicate=map:marker/world_spawn,limit=1] run function map:system/wait/set_world_border/main
 
+## Choose Advancements randomly
+execute if predicate map:system/wait/choose_advancements run function map:system/wait/set_advancements/main
+
 ## Teleport system
 execute as @a[predicate=map:system/common/teleport/main] run function map:system/common/teleport/main
 
