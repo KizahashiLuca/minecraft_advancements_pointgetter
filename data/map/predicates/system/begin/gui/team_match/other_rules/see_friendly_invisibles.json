@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/begin/gui/team_match/other_rules"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/host"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:23b,tag:{Tags:[\"MAP_setting_item\",\"MAP_see_friendly_invisibles\"]}}]}"
+      }
+    }
+  }
+]

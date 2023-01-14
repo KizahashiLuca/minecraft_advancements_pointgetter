@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:chest_minecart",
+      "nbt": "{Tags:[\"MAP_Minecart\"],OnGround:0b}"
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"MAP_SetNextMinecart\"]}"
+      }
+    }
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:recovery_compass",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                [
+                  "",
+                  {"translate":"デスからリスポーンにかかるまでの時間","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                [
+                  "",
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"score":{"name":"#map","objective":"DeathPenaltyTime"},"color":"green","bold":true,"italic":false},
+                  {"text":"分","color":"green","bold":true,"italic":false},
+                  {"text":" ","color":"white","bold":false,"italic":false},
+                  {"text":"選択中","color":"white","bold":false,"italic":false}
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{HideFlags:63,Tags:[\"MAP_setting_item\",\"MAP_death_penalty_time\"]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

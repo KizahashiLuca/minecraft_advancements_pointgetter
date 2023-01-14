@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/team/a"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/leader"
+  }
+]

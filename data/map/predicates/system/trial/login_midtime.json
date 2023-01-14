@@ -1,0 +1,26 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/trial"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:reference",
+      "name": "map:player/host"
+    }
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "map:player/not_participant"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "map:system/common/not_spectator"
+      }
+    ]
+  }
+]

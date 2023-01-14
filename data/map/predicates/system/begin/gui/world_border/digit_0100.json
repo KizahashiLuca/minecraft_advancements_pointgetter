@@ -1,0 +1,35 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/begin/gui/world_border"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/host"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Inventory:[{Slot:19b,tag:{Tags:[\"MAP_setting_item\",\"MAP_number\"]}}]}"
+          }
+        }
+      },
+      {
+        "condition": "minecraft:inverted",
+        "term": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Inventory:[{Slot:24b,tag:{Tags:[\"MAP_setting_item\",\"MAP_number\"]}}]}"
+          }
+        }
+      }
+    ]
+  }
+]

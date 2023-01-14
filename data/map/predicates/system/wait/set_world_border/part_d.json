@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/wait"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#map"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": 23,
+      "max": 23
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#map"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:gamerules/world_border/part_d"
+  }
+]

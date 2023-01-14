@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "map:player/dead"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "map:player/not_participant"
+    }
+  ]
+}

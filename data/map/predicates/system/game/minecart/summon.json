@@ -1,0 +1,68 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:marker/minecart/where_summon_minecart"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "Minute": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#map"
+          },
+          "score": "Minute",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#map"
+          },
+          "score": "Minute",
+          "scale": 1
+        }
+      },
+      "Second": {
+        "min": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#map"
+          },
+          "score": "Second",
+          "scale": 1
+        },
+        "max": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#map"
+          },
+          "score": "Second",
+          "scale": 1
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#map"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  }
+]

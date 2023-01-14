@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "map:system/common/teleport/minecart"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "map:system/common/teleport/center"
+    }
+  ]
+}

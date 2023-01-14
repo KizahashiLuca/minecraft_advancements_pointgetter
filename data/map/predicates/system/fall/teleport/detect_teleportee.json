@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/participant"
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"MAP_DetectTeleportee\"]}"
+    }
+  }
+]

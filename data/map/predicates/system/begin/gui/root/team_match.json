@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/begin/gui/root"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/host"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:gamerules/num_of_participants/not_one"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:24b,tag:{Tags:[\"MAP_setting_item\",\"MAP_team_match\"]}}]}"
+      }
+    }
+  }
+]

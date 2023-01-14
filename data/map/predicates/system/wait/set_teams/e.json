@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/wait"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:gamerules/team_match/number_of_teams/ge_5"
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#map"
+      },
+      "score": "Second",
+      "scale": 1
+    },
+    "range": {
+      "min": 29,
+      "max": 29
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "#map"
+      },
+      "score": "Tick",
+      "scale": 1
+    },
+    "range": {
+      "min": 0,
+      "max": 0
+    }
+  }
+]

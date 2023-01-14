@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:gamerules/team_match/number_of_teams/3p"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:22b,Count:3b,tag:{Tags:[\"MAP_setting_item\",\"MAP_number_of_teams\"]}}]}"
+      }
+    }
+  }
+]

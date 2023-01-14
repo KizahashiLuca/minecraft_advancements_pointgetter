@@ -1,0 +1,24 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "map:phase/begin/gui/minecart_interval"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:player/host"
+  },
+  {
+    "condition": "minecraft:reference",
+    "name": "map:system/begin/gui/minecart_interval/gt_zero"
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Inventory:[{Slot:34b,tag:{Tags:[\"MAP_setting_item\",\"MAP_ok\"]}}]}"
+      }
+    }
+  }
+]
